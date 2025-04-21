@@ -79,10 +79,6 @@ public class FiletUtil {
                 String newPath = path + "[" + i + "]";
                 validateNode(list.get(i), newPath, errors);
             }
-        } else {
-            if (nodo instanceof String && ((String) nodo).trim().isEmpty()) {
-                errors.add("❌ Cadena vacía en: " + path);
-            }
         }
 
     }
