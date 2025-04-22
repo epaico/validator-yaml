@@ -12,12 +12,12 @@ public class YamlValidator {
         Path path = Paths.get(Constants.URL_FOLDER);
 
         if (!Files.exists(path) || !Files.isDirectory(path)) {
-            System.out.println("No es un directorio");
+            System.out.println("No existe el directorio yaml");
             return;
         }
 
         if (!FiletUtil.existsFilesYaml(path)) {
-            System.out.println("No existen yaml");
+            System.out.println("No existen archivos yaml o yml");
             return;
         }
         List<Path> yamlFiles = new ArrayList<>();
