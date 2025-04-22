@@ -26,3 +26,14 @@ Para compilar el proyecto y generar el archivo `.jar`, ejecuta:
 
 ```bash
 mvn clean package
+```
+## Creación de directorio yaml
+- Crea un directorio `yaml` en el mismo directorio donde se encuentra el .jar generado
+- Dentro del directorio creado agrega los archivos `.yaml` y `.yml`
+
+## Ejecución
+
+```bash
+java -jar validator-yaml-1.0-SNAPSHOT.jar
+
+```
